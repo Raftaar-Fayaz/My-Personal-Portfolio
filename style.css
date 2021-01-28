@@ -17,7 +17,7 @@
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-  z-index: 1000;
+  /* z-index: 100; */
 }
 .toggle.active {
   background: #000 url(./images/close.png);
@@ -438,8 +438,8 @@ p {
 }
 
 .close_btn {
-  top: 35px;
-  right: 330px;
+  top: 30px;
+  right: 30px;
   width: 50px;
   height: 50px;
   position: absolute;
@@ -449,7 +449,7 @@ p {
   background-repeat: no-repeat;
   padding: 5px;
   cursor: pointer;
-  z-index: 101;
+  z-index: 999;
 }
 
 .contact {
@@ -513,7 +513,7 @@ p {
   display: inline-block;
   text-align: center;
   width: 800px;
-  margin-top: 60px;
+  margin-top: 50px;
   margin-bottom: 20px;
   opacity: 0.8;
   cursor: default;
