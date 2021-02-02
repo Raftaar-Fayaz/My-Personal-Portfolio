@@ -150,6 +150,7 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 .sidebar ul li a:hover {
   color: #00bcd4;
 }
