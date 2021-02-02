@@ -34,6 +34,7 @@ section {
   width: 100%;
   min-height: 100vh;
 }
+
 .banner .imgSidebar {
   position: absolute;
   top: 0;
@@ -75,6 +76,7 @@ section {
   padding: 0 8px;
   cursor: pointer;
 }
+
 .banner .contentBx h4 {
   font-size: 1.5em;
   color: #333;
@@ -93,6 +95,7 @@ section {
   padding-bottom: 5px;
   cursor: default;
 }
+
 p {
   font-size: 1.1em;
   margin: 20px 0;
@@ -107,7 +110,7 @@ p {
   text-decoration: none;
   font-weight: 500;
   letter-spacing: 2px;
-  border: 1px solid #00bcd4;
+  border: 2px solid #00bcd4;
   transition: 0.5s ease-in-out;
 }
 .btn:hover {
@@ -194,7 +197,9 @@ p {
   font-weight: 700;
   letter-spacing: 1px;
   cursor: default;
+  text-transform: uppercase;
 }
+
 .title p {
   max-width: 700px;
   display: inline-block;
@@ -220,6 +225,9 @@ p {
 .title.white h2 {
   color: #fff;
 }
+.title.white h2 > span {
+  color: #00bcd4;
+}
 .title.white h2::before {
   background: #fff;
 }
@@ -232,8 +240,8 @@ p {
   margin-top: 30px;
 }
 .about .content .textBx {
-  min-width: 72%;
-  width: 72%;
+  min-width: 65%;
+  width: 65%;
 }
 .about .content .textBx {
   cursor: default;
@@ -247,8 +255,9 @@ p {
 }
 .about .content .imgBx {
   margin-top: 20px;
-  margin-left: 57px;
+  margin-left: 70px;
 }
+
 .about .content .imgBx img {
   max-width: 100%;
 }
@@ -644,5 +653,25 @@ p {
   100% {
     opacity: 0;
     transform: scale(1.4);
+  }
+}
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: #333;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: #333;
   }
 }
