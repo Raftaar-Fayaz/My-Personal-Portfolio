@@ -384,13 +384,13 @@ p {
   right: 0;
 }
 .left_image > img {
-  width: 700px;
+  width: 100%;
   object-fit: contain;
 }
 .popup_box {
   background-color: #000;
   color: #fff;
-  max-width: 730px;
+  max-width: 50%;
   margin: 0 auto;
   z-index: 999;
   position: absolute;
@@ -404,7 +404,7 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  overflow: auto;
+  overflow: hidden;
 }
 .popup_box .right_content {
   margin-top: 10px;
@@ -422,9 +422,10 @@ p {
 
 .btnProject {
   padding: 10px 0;
+  overflow: hidden;
 }
 .btnProject button {
-  width: 250px;
+  width: 30%;
   border: none;
   outline: none;
   margin-top: 7px;
@@ -456,7 +457,6 @@ p {
   display: block;
   display: inline-block;
   border: 3px solid white;
-  /* border-radius: 50%; */
   position: relative;
   display: flex;
   align-items: center;
@@ -464,13 +464,13 @@ p {
   cursor: pointer;
   transform: scale(0.9);
   background: #000;
+  z-index: 1000;
 }
 .close_btn:after {
   position: absolute;
   content: "";
   height: 100%;
   width: 100%;
-  /* border-radius: 50%; */
   border: 3px solid white;
   animation: closeBtn 1s ease infinite;
 }
@@ -583,6 +583,16 @@ p {
     pointer-events: none;
   }
 }
+@keyframes closeBtn {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.4);
+  }
+}
 
 @media (max-width: 991px) {
   .banner .imgSidebar {
@@ -635,6 +645,15 @@ p {
   .sidebar ul li a {
     font-size: 1.5em;
   }
+  .popup_contentBody {
+    font-size: 0.9em;
+  }
+  .btnProject button a {
+    font-size: 14px;
+  }
+  .btnProject button {
+    width: 50%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -645,34 +664,13 @@ p {
     width: 100%;
     margin: 10px 0;
   }
-}
-@keyframes closeBtn {
-  0% {
-    opacity: 1;
-    transform: scale(1);
+  .popup_contentBody {
+    font-size: 0.8em;
   }
-  100% {
-    opacity: 0;
-    transform: scale(1.4);
+  .btnProject button a {
+    font-size: 12px;
   }
-}
-@keyframes text_reveal_box {
-  50% {
-    width: 100%;
-    left: 0;
-  }
-  100% {
-    width: 0;
-    left: 100%;
-  }
-}
-@keyframes text_reveal {
-  100% {
-    color: #333;
-  }
-}
-@keyframes text_reveal_name {
-  100% {
-    color: #333;
+  .btnProject button {
+    width: 70%;
   }
 }

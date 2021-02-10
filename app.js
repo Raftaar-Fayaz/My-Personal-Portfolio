@@ -40,36 +40,7 @@ function saveContactInfo(firstName, lastName, gmail, number, message) {
     number : number,
     message : message,
   });
-    // retriveInfos();
 }
-
-  // function retriveInfos() {
-    // let ref = firebase.database().ref("contacts");
-    // ref.on("value", gotData);
-  // }
-
-  // function gotData(data) {
-  //   let info = data.val();
-  //   let keys = Object.keys(info);
-
-  //   for (let i = 0; i < keys.length; i++){
-  //     let infoData = keys[i];
-  //     let firstName = info[infoData].firstName;
-  //     let lastName = info[infoData].lastName;
-  //     let gmail = info[infoData].gmail;
-  //     let number = info[infoData].number;
-  //     let message = info[infoData].message;
-  //     console.log(firstName, lastName, gmail, number, message);
-
-  //     let infoResults = document.querySelector(".infoResults");
-
-  //     infoResults.innerHTML += `<div>
-  //     <p>Hello <span>${firstName}</span>, I have received your message.
-  //     I'll get back to you as soon as possible, Appricate your patience. Thank you.</p>
-  //     </div>`;
-  //   }
-  // }
-
 
 function sendEmail(firstName, lastName, gmail, number, message) {
   Email.send({
