@@ -50,7 +50,7 @@ function sendEmail(firstName, lastName, gmail, number, message) {
     To: "mr.fayaz.rf@gmail.com",
     From: 'this.is.fayaz.ahamed@gmail.com',
     Subject: `${firstName} sent you message from Portfolio`,
-    Body: `Name: ${firstName} ${lastName} <br/> Gmail: ${gmail} <br/> Number: ${number} <br/> Message: ${message}`, 
+    Body: `Name: ${firstName} ${lastName} <br/> Gmail: ${gmail} <br/> Number: ${number} <br/> Message: ${message}`,
   })
   .then((message) => alert("Thank You, Your Message sent successfully"))
 }

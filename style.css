@@ -255,12 +255,13 @@ p {
   font-size: 17px;
 }
 .about .content .imgBx {
-  margin-top: 20px;
-  margin-left: 70px;
+  margin-top: 23px;
+  margin-left: 80px;
 }
 
 .about .content .imgBx img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 .services {
